@@ -33,3 +33,36 @@ width: 100vw;
   background-color: #0d6efd; /* bleu Bootstrap */
   border-radius: 2px;
 }
+
+#rss a i {
+ 
+  color: #bbbbbb;
+  transition: color 0.3s ease;
+}
+
+#rss a:hover i {
+  text-decoration: none;
+ color: #ffffff;
+font-weight: 700;
+}
+footer a :hover {
+  text-decoration: none;
+
+}
+footer a {
+  color: inherit; /* garde la couleur actuelle (blanc) */
+  text-decoration: none; /* ❌ enlève le soulignement */
+  transition: font-weight 0.2s ease, color 0.3s ease;
+}
+footer a:hover {
+  font-weight:700;
+
+}
+#btn {
+ background-color: red;
+  
+}
+#btn:hover {
+transition:background-color 0.2s ease, color 0.3s ease ;
+color:rgb(56, 12, 12) ;
+}
