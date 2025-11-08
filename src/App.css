@@ -66,3 +66,9 @@ footer a:hover {
 transition:background-color 0.2s ease, color 0.3s ease ;
 color:rgb(56, 12, 12) ;
 }
+.separateur-bleu {
+  border: none;
+  height: 3px;
+  background-color: blue;
+
+}
