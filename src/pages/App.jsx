@@ -6,13 +6,15 @@ import Services from './pages/Services.jsx';
 import Competence from './pages/Competence.jsx';
 import Home from './pages/Home.jsx';
 import Portfolio from './pages/Portfolio.jsx';
+import '../App.css';
 function App() {
   return (
   
 
     <BrowserRouter>
 
-      <Nav />
+
+    <Nav />
 
    <Routes>
         <Route path="/" element={<Home />} />
