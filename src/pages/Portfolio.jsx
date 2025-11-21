@@ -13,10 +13,12 @@ function Portfolio() {
       <div className="text-center my-4">
         <h1 className="page-title">Portfolio</h1>
         <p className="intro">Voici quelques-unes de mes réalisations</p>
-        <hr className="intro-hr" />
+        <div className="mx-auto" style={{ width: '400px', height: '5px', backgroundColor: '#007bff', marginBottom: '40px' }}></div>
+                    
+        
       </div>
 
-      {/* Grid des projets */}
+      
       <div className="row">
         
         {/* Colonne 1 : Fresh-food et SEO */}
