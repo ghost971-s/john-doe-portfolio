@@ -1,47 +1,43 @@
-export default function Competences() {
-  return (
-    <div className="container py-5 text-center">
-      <div className="col-12 col-md-8 col-lg-6 mx-auto">
-        <div className="section-title mb-4">
-          <h2>Mes compétences</h2>
-          <hr className="my-2 separateur-bleu" />
-        </div>
+import Competence from "../Competence";
+import Nav from '../components/Nav.jsx';
+import '../App.css';
 
-        {/* HTML */}
-        <div className="progress mb-3">
-          <div className="progress-bar bg-danger" style={{ width: "90%" }}>
-            HTML5 – 90%
+export default function Home() {
+    return (
+      <>
+        
+
+        {/* HERO */}
+        <header className="hero">
+          <div className="hero-content">
+            <h1>Bonjour je suis John Doe</h1>
+            <h2 className="lead">
+              Développeur web full stack
+            </h2>
+            <a href="#services" className="btn btn-primary custom-cta mt-3">
+              Découvrir mes services
+            </a>
+          </div>
+        </header>
+
+        {/* SECTION A PROPOS ET COMPETENCE */}
+        <div className="container my-5">
+          <div className="row">
+            {/* Colonne gauche : À propos */}
+            <div className="col-md-6 col-12 col-md-6 col-lg-6 mx auto">
+              <h2 className="section-title">À propos</h2>
+              <hr className="separateur-bleu" />
+              <p>
+                Je travaille avec React, Node.js, HTML, CSS, Bootstrap et Tailwind.
+              </p>
+            </div>
+ 
+            {/* Colonne droite : Compétence */}
+            <div className="col-12 col-md-6 col-lg-6 mx auto">
+              <Competence />
+            </div>
           </div>
         </div>
-
-        {/* CSS */}
-        <div className="progress mb-3">
-          <div className="progress-bar bg-info" style={{ width: "80%" }}>
-            CSS3 – 80%
-          </div>
-        </div>
-
-        {/* JS */}
-        <div className="progress mb-3">
-          <div className="progress-bar bg-warning" style={{ width: "70%" }}>
-            JavaScript – 70%
-          </div>
-        </div>
-
-        {/* PHP */}
-        <div className="progress mb-3">
-          <div className="progress-bar bg-success" style={{ width: "60%" }}>
-            PHP – 60%
-          </div>
-        </div>
-
-        {/* React */}
-        <div className="progress mb-3">
-          <div className="progress-bar bg-primary" style={{ width: "50%" }}>
-            React – 50%
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+      </>
+    );
+} 

@@ -54,7 +54,7 @@ h2 {
  
 .btn-primary.custom-cta {
   background-color: red;
-  border-color: #0d6efd;
+  border-color:red;
   color: #fff;
   padding: .6rem 1.1rem;
   font-weight: 600;
@@ -94,11 +94,8 @@ h2 {
   text-align: left; 
 }
 
-.section-title {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
 
-}
+
 /* Style de la carte complète (la boîte) */
 .portfolio-card {
   /* Fond de la carte */
@@ -177,10 +174,12 @@ h2 {
   padding: 8px 10px; 
   background-color: #f5f5f5; 
 }
+/* effets sur le footer*/
 footer a {
   color:#f5f5f5;
   text-decoration: none;
 }
+/* qu survol de la souris */
 footer a:hover {
   font-weight: bold;
   color:whitesmoke;
@@ -218,3 +217,39 @@ footer a:hover {
  
   color: #ffffff !important; 
   }
+  .service-banner img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .contact-header {
+    text-align: center;;
+  }
+  .section-inf {
+    text-align: center;
+  }
+        
+.title-linef {
+
+border-bottom: 3px solid #007bfF;
+padding-bottom: 10px;
+    }
+    .title-linec {
+
+      border-bottom: 3px solid #007bfF;
+      padding-bottom: 10px;
+      margin-bottom:30px ;
+      }
+    .lilbleu-line {
+      /* 1. Définir une largeur fixe, plus petite que le titre */
+    width: 400px; /*  Ajustez cette valeur (en px) pour définir la longueur exacte */
+    height: 5px; /* Définit l'épaisseur de la ligne */
+    
+    /* 2. Couleur de la ligne */
+    background-color: #007bff; /* Bleu Bootstrap */
+
+    /* 3. Centrage de la ligne (si le titre est centré) */
+    margin: 0 auto 30px auto;
+    
+
+    }
