@@ -1,4 +1,4 @@
-import Competence from '../Competence.jsx';
+
 import Nav from '../components/Nav.jsx';
 import '../App.css';
 
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           
           {/* COLONNE DROITE : Mes compétences */}
-          {/* ❌ Correction: Utilisez col-md-6 pour éviter le débordement (6 + 6 = 12) */}
+          
           <div className="col-12 col-md-6"> 
 
             {/* Titre "Mes compétences" avec ligne courte centrée */}
