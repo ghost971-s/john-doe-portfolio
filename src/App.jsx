@@ -2,21 +2,21 @@ import React from 'react';
  import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav.jsx';
 import Footer from './components/Footer.jsx';
-import Services from './pages/Services.jsx';
-import Competence from './pages/Competence.jsx';
+import Services from './pages/Services.jsx';      
 import Home from './pages/Home.jsx';
 import Portfolio from './pages/Portfolio.jsx'; 
 import Contact from './pages/contact.jsx';
 import Mentions from './pages/Mentions.jsx';
 function App() {
   return (
+   
   
 
     
 <div>
       <Nav />
 
-       <Routes>
+       <Routes>   
            {/* Routes définies (Home, Services, Portfolio) */}
            <Route path="/" element={<Home />} />
            <Route path="/services" element={<Services />} />       
@@ -28,8 +28,9 @@ function App() {
          </Routes> 
    
       {/* Footer global */}
-      <Footer />
+      <Footer />      
       </div>
+
 )  
 }
 

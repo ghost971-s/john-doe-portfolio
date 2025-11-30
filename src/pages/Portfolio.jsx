@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import banner from '/images/banner.jpg';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function Portfolio() {
   return (
     <div className="portfolio-page">
