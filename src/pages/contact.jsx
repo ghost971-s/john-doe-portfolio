@@ -17,7 +17,7 @@ return (
 <form action="#" method="POST">
     {/* 1. Nom */}
     <div className="mb-3">
-        {/* <label htmlFor="nom" className="form-label">Votre nom</label> ⬅️ On retire le label */}
+        {/* <label htmlFor="nom" className="form-label">Votre nom</label> ⬅ On retire le label */}
         <input 
             type="text" 
             className="form-control" 
@@ -36,7 +36,7 @@ return (
             className="form-control" 
             id="email" 
             name="email" 
-            placeholder="Votre adresse email" // 💡 AJOUT DU PLACEHOLDER
+            placeholder="Votre adresse email" //  AJOUT DU PLACEHOLDER
             required 
         />
     </div>

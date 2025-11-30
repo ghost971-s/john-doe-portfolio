@@ -1,255 +1,274 @@
 
 
 
-#root,
-html,
-body {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-h1,
-h2 {
-  font-weight: 600;
-  margin: 0;
-}
-
-
-.hero {
-  
-
-  background-image: url("/images/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 80vh;         
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  width: 100%;
-  position: relative;
-  padding: 0 1rem;
-}
-
-.intro , .porto {
-  text-align: center;
-
-}
-/* Contenu centré dans le hero */
-
-.hero .hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem; 
-  background: rgba(0,0,0,0.25); /* légère superposition pour lisibilité */
-
-  border-radius: 8px;
-}
-
-/* Bouton principal (utilise la classe Bootstrap mais on ajoute une variante)*/
- 
-.btn-primary.custom-cta {
-  background-color: red;
-  border-color:red;
-  color: #fff;
-  padding: .6rem 1.1rem;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background-color .2s ease, transform .12s ease;
-}
-
-.btn-primary {
-  margin-bottom: 15px;
-}
- 
-.section-title {
-  position: relative;
-  padding-bottom: .75rem;
-  margin-bottom: 1rem;
-  display: inline-block;
-}
- /*
-.section-title::before {
- 
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 4px;
-  background-color: #0d6efd;
-  border-radius: 2px;
-}
-/* espace général sous le HERO */
-.section-apropos-competence {
-  padding-top: 50px; 
-}
-.competences-wrapper {
-  margin: 0;
-  padding: 0;
-  text-align: left; 
-}
-
-
-
-/* Style de la carte complète (la boîte) */
-.portfolio-card {
-  /* Fond de la carte */
-  background-color: white; 
-  /* Bordure légère */
-  border: 1px solid #e0e0e0;
-  /* Coins arrondis */
-  border-radius: 5px; 
-  /* Ombre pour l'effet 3D/relief */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
-  /* Cache ce qui dépasse (utile si l'image a des coins arrondis) */
-  overflow: hidden; 
-  /* Assure que la carte prend toute la largeur de sa colonne */
-  width: 100%;
-  /* Transition pour un effet de survol (hover) agréable */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-
-.portfolio-card:hover {
-  /* Soulève légèrement la carte */
-  transform: translateY(-5px); 
-  background-color: #efefef;
-  /* Augmente l'ombre */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
-}
-
-/* Assurez-vous que les images prennent toute la largeur de la carte */
-.portfolio-card img.img-fluid {
-  width: 100%;
-  height: auto;
-  display: block; /* Supprime l'espace sous l'image */
-}
-  .portfolio-card .card-content {
-  display: flex;
-  flex-direction: column; 
-  flex-grow: 1;
-  
-  
-  align-items: center; 
-}
-
-
-/* Style du titre pour le différencier de la description */
-.portfolio-card .projet-title {
-  font-size: 1.3rem;
-  margin-top: 0;
-  margin-bottom: 5px;
-  color: #333; 
-}
-
-#aline 
-{
-  text-align: center;
-}
-  
- 
-
-/* Style du paragraphe de description technique (Pied de Page) */
-.portfolio-card .projet-des {
-  color: #555555; 
-  font-size: 0.95rem;
-
-  /* Styles de Pleine Largeur */
-  display: block; 
-  width: 100%; /* Force l'élément à prendre 100% */
-  margin: 10px 0 15px 0; 
-  text-align: center; 
-
-  /* Cette propriété est essentielle : elle inclut le padding et la bordure DANS la largeur */
-  box-sizing: border-box; 
-  
-  /* Styles visuels */
-  border: 1px solid #cccccc; 
-  border-radius: 4px;
-  padding: 8px 10px; 
-  background-color: #f5f5f5; 
-}
-/* effets sur le footer*/
-footer a {
-  color:#f5f5f5;
-  text-decoration: none;
-}
-/* qu survol de la souris */
-footer a:hover {
-  font-weight: bold;
-  color:whitesmoke;
-}
-
-/* Style normal du bouton */
-.portfolio-card .btn-primary {
-  
-  background-color: #0d6efd; /* Bleu de base */
-  border-color: #0d6efd;
-  color: #fff;
-  
-  /* Ajout de la transition pour la douceur */
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-/* Effet au survol du bouton */
-.portfolio-card .btn-primary:hover {
-  /* bleu légèrement PLUS CLAIRE */
-  background-color: #3b82f6; /* Un bleu légèrement plus clair que #0d6efd */
-  border-color: #3b82f6; 
-  
-  /* (Optionnel) Effet pour le soulever légèrement */
-  transform: translateY(-1px);
-}
-#rss i {
-  /* Assure une transition douce */
-  transition: color 0.3s ease-in-out; 
-  /* Pourrait être nécessaire si une couleur de lien par défaut est appliquée */
-  color: grey; 
-}
-
-/* 2. Style au survol (Hover) du lien <a> */
-#rss a:hover i {
- 
-  color: #ffffff !important; 
-  }
-  .service-banner img {
-    height: 300px;
-    object-fit: cover;
+  #root,
+  html,
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    height: 100%;
   }
 
-  .contact-header {
-    text-align: center;;
+  h1,
+  h2 {
+    font-weight: 600;
+    margin: 0;
   }
-  .section-inf {
+
+
+  .hero {
+    
+
+    background-image: url("/images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;         
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    padding: 0 1rem;
+  }
+
+  .intro , .porto {
+    text-align: center;
+
+  }
+  /* Contenu centré dans le hero */
+
+  .hero .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem; 
+    background: rgba(0,0,0,0.25); /* légère superposition pour lisibilité */
+
+    border-radius: 8px;
+  }
+
+  /* Bouton principal (utilise la classe Bootstrap mais on ajoute une variante)*/
+  
+  .btn-primary.custom-cta {
+    background-color: red;
+    border-color:red;
+    color: #fff;
+    padding: .6rem 1.1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color .2s ease, transform .12s ease;
+  }
+
+  .btn-primary {
+    margin-bottom: 15px;
+  }
+  
+  .section-title {
+    position: relative;
+    padding-bottom: .75rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  /*
+  .section-title::before {
+  
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #0d6efd;
+    border-radius: 2px;
+  }
+  /* espace général sous le HERO */
+  .section-apropos-competence {
+    padding-top: 50px; 
+  }
+  .competences-wrapper {
+    margin: 0;
+    padding: 0;
+    text-align: left; 
+  }
+
+
+
+  /* Style de la carte complète (la boîte) */
+  .portfolio-card {
+    /* Fond de la carte */
+    background-color: white; 
+    /* Bordure légère */
+    border: 1px solid #e0e0e0;
+    /* Coins arrondis */
+    border-radius: 5px; 
+    /* Ombre pour l'effet 3D/relief */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    /* Cache ce qui dépasse (utile si l'image a des coins arrondis) */
+    overflow: hidden; 
+    /* Assure que la carte prend toute la largeur de sa colonne */
+    width: 100%;
+    /* Transition pour un effet de survol (hover) agréable */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+
+  .portfolio-card:hover {
+    /* Soulève légèrement la carte */
+    transform: translateY(-5px); 
+    background-color: #efefef;
+    /* Augmente l'ombre */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+  }
+
+  /* Assurez-vous que les images prennent toute la largeur de la carte */
+  .portfolio-card img.img-fluid {
+    width: 100%;
+    height: auto;
+    display: block; /* Supprime l'espace sous l'image */
+  }
+    .portfolio-card .card-content {
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1;
+    
+    
+    align-items: center; 
+  }
+
+
+  /* Style du titre pour le différencier de la description */
+  .portfolio-card .projet-title {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333; 
+  }
+
+  #aline 
+  {
     text-align: center;
   }
-        
-.title-linef {
+    
+  
 
-border-bottom: 3px solid #007bfF;
-padding-bottom: 10px;
+  /* Style du paragraphe de description technique (Pied de Page) */
+  .portfolio-card .projet-des {
+    color: #555555; 
+    font-size: 0.95rem;
+
+    /* Styles de Pleine Largeur */
+    display: block; 
+    width: 100%; /* Force l'élément à prendre 100% */
+    margin: 10px 0 15px 0; 
+    text-align: center; 
+
+    /* Cette propriété est essentielle : elle inclut le padding et la bordure DANS la largeur */
+    box-sizing: border-box; 
+    
+    /* Styles visuels */
+    border: 1px solid #cccccc; 
+    border-radius: 4px;
+    padding: 8px 10px; 
+    background-color: #f5f5f5; 
+  }
+  /* effets sur le footer*/
+  footer a {
+    color:#f5f5f5;
+    text-decoration: none;
+  }
+  /* qu survol de la souris */
+  footer a:hover {
+    font-weight: bold;
+    color:whitesmoke;
+  }
+
+  /* Style normal du bouton */
+  .portfolio-card .btn-primary {
+    
+    background-color: #0d6efd; /* Bleu de base */
+    border-color: #0d6efd;
+    color: #fff;
+    
+    /* Ajout de la transition pour la douceur */
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  /* Effet au survol du bouton */
+  .portfolio-card .btn-primary:hover {
+    /* bleu légèrement PLUS CLAIRE */
+    background-color: #3b82f6; /* Un bleu légèrement plus clair que #0d6efd */
+    border-color: #3b82f6; 
+    
+    /* (Optionnel) Effet pour le soulever légèrement */
+    transform: translateY(-1px);
+  }
+  #rss i {
+    /* Assure une transition douce */
+    transition: color 0.3s ease-in-out; 
+    /* Pourrait être nécessaire si une couleur de lien par défaut est appliquée */
+    color: grey; 
+  }
+
+  /* 2. Style au survol (Hover) du lien <a> */
+  #rss a:hover i {
+  
+    color: #ffffff !important; 
     }
-    .title-linec {
+    .service-banner img {
+      height: 300px;
+      object-fit: cover;
+    }
 
-      border-bottom: 3px solid #007bfF;
-      padding-bottom: 10px;
-      margin-bottom:30px ;
+    .contact-header {
+      text-align: center;;
+    }
+    .section-inf {
+      text-align: center;
+    }
+          
+  .title-linef {
+
+  border-bottom: 3px solid #007bfF;
+  padding-bottom: 10px;
       }
-    .lilbleu-line {
-      /* 1. Définir une largeur fixe, plus petite que le titre */
-    width: 400px; /*  Ajustez cette valeur (en px) pour définir la longueur exacte */
-    height: 5px; /* Définit l'épaisseur de la ligne */
-    
-    /* 2. Couleur de la ligne */
-    background-color: #007bff; /* Bleu Bootstrap */
+      .title-linec {
 
-    /* 3. Centrage de la ligne (si le titre est centré) */
-    margin: 0 auto 30px auto;
-    
+        border-bottom: 3px solid #007bfF;
+        padding-bottom: 10px;
+        margin-bottom:30px ;
+        }
+      .lilbleu-line {
+        /* 1. Définir une largeur fixe, plus petite que le titre */
+      width: 400px; /*  Ajustez cette valeur (en px) pour définir la longueur exacte */
+      height: 5px; /* Définit l'épaisseur de la ligne */
+      
+      /* 2. Couleur de la ligne */
+      background-color: #007bff; /* Bleu Bootstrap */
 
-    }
+      /* 3. Centrage de la ligne (si le titre est centré) */
+      margin: 0 auto 30px auto;
+      
+
+      }         
+      /* Style pour les liens dans la navigation */
+.navbar-nav .nav-link {
+  /* Assure que le texte n'est pas souligné par défaut */
+  text-decoration: none; 
+  /* Définit une transition douce pour l'effet de survol (optionnel mais joli) */
+  transition: text-decoration 0.3s ease;
+}
+
+/* Le lien est souligné au survol */
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+/* Style pour le lien de la page active */
+.navbar-nav .nav-link.active-link {
+  font-weight: bold; /* Mise en gras */
+  text-decoration: underline; /* Souligné */
+  /* Vous pouvez aussi changer la couleur pour plus de visibilité */
+  color: var(--bs-primary) !important; 
+}
